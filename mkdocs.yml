@@ -1,0 +1,11 @@
+site_name: GeoTimeLapse
+
+nav:
+  - Guia Rapida:
+    - Español: quick_guide/es.md
+
+theme:
+  name: mkdocs
+  color_mode: auto
+  user_color_mode_toggle: true
+  
