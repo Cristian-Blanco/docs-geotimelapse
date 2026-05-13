@@ -1,17 +1,17 @@
-# Welcome to MkDocs
+# GeoTimeLapse Documentation
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Welcome to the official documentation for **GeoTimeLapse**, a plugin for QGIS that allows users to visualize satellite data changes over time.
 
-## Commands
+## Getting Started
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+In this documentation, you will find step-by-step instructions on how to:
+- Install and set up the plugin.
+- Select and configure the satellite images.
+- Generate time-lapse animations.
 
-## Project layout
+## Quick Guide
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+This guide will walk you through the process of using the GeoTimeLapse plugin.:
+Follow the steps in the guide to get started with the plugin!
+
+If you have any questions or need further assistance, visit the [GitHub repository](https://github.com/Cristian-Blanco/Geo-Time-Lapse){target="_blank"} for more resources and support.
