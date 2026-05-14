@@ -1,20 +1,61 @@
 site_name: GeoTimeLapse
 
-nav:
-  - Home: 'index.md'
-  - Setup:
-      - Español: 'setup/es.md'
-      - English: 'setup/en.md'
-  - Quick Guide:
-      - Español: 'quick_guide/es.md'
-      - English: 'quick_guide/en.md'
+docs_dir: docs
+
+repo_url: https://github.com/Cristian-Blanco/Geo-Time-Lapse
+repo_name: Geo-Time-Lapse
+
 
 theme:
-  name: 'mkdocs'
-  color_mode: auto
-  user_color_mode_toggle: true
+  name: material
+  language: en
+  logo: img/logo.png
+  favicon: img/favicon.ico
+  direction: ltr
+  palette:
+    primary: light green
+    accent: amber
+  icon:
+    repo: fontawesome/brands/github
+
+extra:
+  generator: false
+
+authors:
+  juan_perez:
+    name: Juan Pérez
+    description: Desarrollador Backend
+    avatar: github.com
+    url: github.com
+  maria_gomez:
+    name: María Gómez
+    description: Diseñadora UI/UX
+    avatar: github.com
 
 plugins:
-  - search
-  - open-in-new-tab
+  - search:
+      lang:
+        - en
+        - es
+  - i18n:
+      docs_structure: suffix
+      languages:
+        - locale: en
+          default: true
+          name: English
+          build: true
 
+        - locale: es
+          name: Español
+          build: true
+          nav_translations:
+            Home: Inicio
+            Setup: Configuración
+            Quick Guide: Guía Rápida
+            Licence: Licencia
+
+nav:
+  - Home: index.md
+  - Setup: setup.md
+  - Quick Guide: quick-guide.md
+  - Licence: licence.md

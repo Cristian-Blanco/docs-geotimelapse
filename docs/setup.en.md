@@ -1,4 +1,4 @@
-## Installation and Setup
+# Setup
 
 To use **GeoTimeLapse** with Google Earth Engine and generate animations, you need to install two essential dependencies:
 
@@ -18,10 +18,13 @@ Although you can install these dependencies in any Python environment, here’s 
 
    To open the Python terminal, go to **Plugins** > **Python Console** in QGIS. If you're not using QGIS, open a terminal or Python console in the environment of your choice.
 
+![Python console location](img/setup/en/1.png)
+
 3. In the Python terminal, run the following command to install the necessary dependencies:
 
 ```python
 import subprocess
-import sys
-subprocess.run([sys.executable, "-m", "pip", "install", "earthengine-api", "imageio_ffmpeg"])
+subprocess.run(["python3", "-m", "pip", "install", "earthengine-api", "imageio_ffmpeg"])
 ```
+
+![Code in console](img/setup/en/2.png)
