@@ -1,17 +1,14 @@
 site_name: GeoTimeLapse
-
 docs_dir: docs
-
 repo_url: https://github.com/Cristian-Blanco/Geo-Time-Lapse
 repo_name: Geo-Time-Lapse
-
+site_url: https://cristian-blanco.github.io/docs-geotimelapse/
 
 theme:
   name: material
-  language: en
   logo: img/logo.png
+  language: en
   favicon: img/favicon.ico
-  direction: ltr
   palette:
     primary: light green
     accent: amber
@@ -39,15 +36,17 @@ plugins:
         - es
   - i18n:
       docs_structure: suffix
+      fallback_to_default: true
       languages:
         - locale: en
           default: true
           name: English
           build: true
-
+          link: /
         - locale: es
           name: Español
           build: true
+          link: /es/
           nav_translations:
             Home: Inicio
             Setup: Configuración
