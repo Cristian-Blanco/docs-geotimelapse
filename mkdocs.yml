@@ -18,17 +18,6 @@ theme:
 extra:
   generator: false
 
-authors:
-  juan_perez:
-    name: Juan Pérez
-    description: Desarrollador Backend
-    avatar: github.com
-    url: github.com
-  maria_gomez:
-    name: María Gómez
-    description: Diseñadora UI/UX
-    avatar: github.com
-
 plugins:
   - search:
       lang:
@@ -49,13 +38,13 @@ plugins:
           link: /es/
           nav_translations:
             Home: Inicio
-            Setup: Configuración
+            Installation: Instalación
             Quick Guide: Guía Rápida
             Licence: Licencia
 
 nav:
   - Home: index.md
-  - Setup: setup.md
+  - Installation: setup.md
   - Quick Guide: quick-guide.md
   - Licence: licence.md
 

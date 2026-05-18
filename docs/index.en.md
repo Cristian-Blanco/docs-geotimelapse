@@ -11,8 +11,14 @@ In this documentation, you will find step-by-step instructions on how to:
 
 Follow the steps in the guide to get started with the plugin!
 
-If you have any questions or need further assistance, visit the [GitHub repository](https://github.com/Cristian-Blanco/Geo-Time-Lapse) for more resources and support.
+If you have any questions or need further assistance, visit the 
+<a href="https://github.com/Cristian-Blanco/Geo-Time-Lapse" target="_blank" rel="noopener noreferrer">
+GitHub repository
+</a>
+for more resources and support.
 
 ## Result
 
 ![False color infrared result](img/example.jpg)
+
+![Image with advanced template](img/example2.png)
