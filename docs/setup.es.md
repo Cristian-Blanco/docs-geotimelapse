@@ -51,8 +51,15 @@ Aunque puedes instalar estas dependencias en cualquier entorno de Python, a cont
 
 3. En la terminal de Python, ejecuta el siguiente comando para instalar las dependencias necesarias:
 
+En la terminal de Python, importa subprocess para ejecutar comandos del sistema:
+
 ```python
 import subprocess
+```
+
+Luego instala las librerías necesarias:
+
+```python
 subprocess.run(["python3", "-m", "pip", "install", "earthengine-api", "imageio_ffmpeg"])
 ```
 
