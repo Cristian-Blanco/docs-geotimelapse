@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>https://cristian-blanco.github.io/docs-geotimelapse/</loc>
+        <lastmod>2026-05-19</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://cristian-blanco.github.io/docs-geotimelapse/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://cristian-blanco.github.io/docs-geotimelapse/es/"/>
+    </url>
+    <url>
+        <loc>https://cristian-blanco.github.io/docs-geotimelapse/licence/</loc>
+        <lastmod>2026-05-19</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://cristian-blanco.github.io/docs-geotimelapse/licence/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://cristian-blanco.github.io/docs-geotimelapse/es/licence/"/>
+    </url>
+    <url>
+        <loc>https://cristian-blanco.github.io/docs-geotimelapse/quick-guide/</loc>
+        <lastmod>2026-05-19</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://cristian-blanco.github.io/docs-geotimelapse/quick-guide/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://cristian-blanco.github.io/docs-geotimelapse/es/quick-guide/"/>
+    </url>
+    <url>
+        <loc>https://cristian-blanco.github.io/docs-geotimelapse/setup/</loc>
+        <lastmod>2026-05-19</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://cristian-blanco.github.io/docs-geotimelapse/setup/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://cristian-blanco.github.io/docs-geotimelapse/es/setup/"/>
+    </url>
+    <url>
+        <loc>https://cristian-blanco.github.io/docs-geotimelapse/es/</loc>
+        <lastmod>2026-05-19</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://cristian-blanco.github.io/docs-geotimelapse/es/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://cristian-blanco.github.io/docs-geotimelapse/"/>
+    </url>
+    <url>
+        <loc>https://cristian-blanco.github.io/docs-geotimelapse/es/licence/</loc>
+        <lastmod>2026-05-19</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://cristian-blanco.github.io/docs-geotimelapse/es/licence/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://cristian-blanco.github.io/docs-geotimelapse/licence/"/>
+    </url>
+    <url>
+        <loc>https://cristian-blanco.github.io/docs-geotimelapse/es/quick-guide/</loc>
+        <lastmod>2026-05-19</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://cristian-blanco.github.io/docs-geotimelapse/es/quick-guide/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://cristian-blanco.github.io/docs-geotimelapse/quick-guide/"/>
+    </url>
+    <url>
+        <loc>https://cristian-blanco.github.io/docs-geotimelapse/es/setup/</loc>
+        <lastmod>2026-05-19</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://cristian-blanco.github.io/docs-geotimelapse/es/setup/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://cristian-blanco.github.io/docs-geotimelapse/setup/"/>
+    </url>
+</urlset>

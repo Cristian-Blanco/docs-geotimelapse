@@ -1,0 +1,1031 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://cristian-blanco.github.io/docs-geotimelapse/quick-guide/">
+      
+      
+        <link rel="prev" href="../setup/">
+      
+      
+        <link rel="next" href="../licence/">
+      
+      
+        
+          <link rel="alternate" href="./" hreflang="en">
+        
+          <link rel="alternate" href="../es/quick-guide/" hreflang="es">
+        
+      
+      
+      <link rel="icon" href="../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Quick Guide - GeoTimeLapse</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="light-green" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#quick-guide" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="GeoTimeLapse" class="md-header__button md-logo" aria-label="GeoTimeLapse" data-md-component="logo">
+      
+  <img src="../img/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            GeoTimeLapse
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Quick Guide
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../es/quick-guide/" hreflang="es" class="md-select__link">
+              Español
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Cristian-Blanco/Geo-Time-Lapse" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Geo-Time-Lapse
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="GeoTimeLapse" class="md-nav__button md-logo" aria-label="GeoTimeLapse" data-md-component="logo">
+      
+  <img src="../img/logo.png" alt="logo">
+
+    </a>
+    GeoTimeLapse
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Cristian-Blanco/Geo-Time-Lapse" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Geo-Time-Lapse
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick Guide
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-log-in-to-the-plugin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1: Log in to the Plugin
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-obtain-your-google-earth-engine-project-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2: Obtain Your Google Earth Engine Project ID
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 2: Obtain Your Google Earth Engine Project ID">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-a-google-earth-engine-account" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Create a Google Earth Engine Account
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#register-your-project-in-google-cloud" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Register Your Project in Google Cloud
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-set-the-project-id-in-geotimelapse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3: Set the Project ID in GeoTimeLapse
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-select-the-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4: Select the Configuration
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-select-the-satellite-image-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5: Select the Satellite Image Type
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 5: Select the Satellite Image Type">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#additional-configurations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Additional Configurations
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-6-select-the-area-to-visualize" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 6: Select the Area to Visualize
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-7-select-the-time-period" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 7: Select the Time Period
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-8-select-the-template-for-the-animation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 8: Select the Template for the Animation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-9-select-the-output-directory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 9: Select the Output Directory
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-10-create-the-video" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 10: Create the Video
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../licence/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Licence
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-log-in-to-the-plugin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1: Log in to the Plugin
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-obtain-your-google-earth-engine-project-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2: Obtain Your Google Earth Engine Project ID
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 2: Obtain Your Google Earth Engine Project ID">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-a-google-earth-engine-account" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Create a Google Earth Engine Account
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#register-your-project-in-google-cloud" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Register Your Project in Google Cloud
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-set-the-project-id-in-geotimelapse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3: Set the Project ID in GeoTimeLapse
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-select-the-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4: Select the Configuration
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-select-the-satellite-image-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5: Select the Satellite Image Type
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 5: Select the Satellite Image Type">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#additional-configurations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Additional Configurations
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-6-select-the-area-to-visualize" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 6: Select the Area to Visualize
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-7-select-the-time-period" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 7: Select the Time Period
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-8-select-the-template-for-the-animation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 8: Select the Template for the Animation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-9-select-the-output-directory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 9: Select the Output Directory
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-10-create-the-video" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 10: Create the Video
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="quick-guide">Quick Guide</h1>
+<p>This guide will walk you step by step through the process of setting up and generating a sequence of satellite images using the <strong>GeoTimeLapse</strong> plugin in QGIS.</p>
+<h2 id="step-1-log-in-to-the-plugin">Step 1: Log in to the Plugin</h2>
+<ol>
+<li>Open the plugin in QGIS.</li>
+<li>Click the <strong>Log in with Google</strong> button.</li>
+<li>Follow the steps to authenticate with your Google account.</li>
+</ol>
+<p><img alt="Login button" src="../img/quick_guide/en/1.png" /></p>
+<h2 id="step-2-obtain-your-google-earth-engine-project-id">Step 2: Obtain Your Google Earth Engine Project ID</h2>
+<ol>
+<li>
+<p>To use the plugin, you need a <strong>Project ID</strong> provided by Google Earth Engine.</p>
+</li>
+<li>
+<p>If you don't have a Google Earth Engine account or haven't created a project, follow these steps:</p>
+</li>
+</ol>
+<h4 id="create-a-google-earth-engine-account">Create a Google Earth Engine Account</h4>
+<ul>
+<li>Go to the following link: <a href="https://signup.earthengine.google.com/">Google Earth Engine Signup</a></li>
+<li>Complete the form with your information to request access.</li>
+<li>Once your request is accepted, you'll be able to access the Google Earth Engine console.</li>
+</ul>
+<h4 id="register-your-project-in-google-cloud">Register Your Project in Google Cloud</h4>
+<ul>
+<li>Go to the Google Cloud Console: <a href="https://console.cloud.google.com/">Google Cloud Console</a>.</li>
+<li>Navigate to the <strong>Google Earth Engine</strong> section within Google Cloud.</li>
+<li>
+<p>In the <strong>Configuration</strong> section, you will see two options:</p>
+<ul>
+<li>Commercial use</li>
+<li>Non-commercial use</li>
+</ul>
+</li>
+<li>
+<p>After registering your project, you'll be able to obtain your <strong>Project ID</strong>.</p>
+</li>
+<li>Once registered, go to the Google Earth Engine console: <a href="https://code.earthengine.google.com/">https://code.earthengine.google.com/</a>.</li>
+<li>In the console, create a new project.</li>
+<li>The <strong>Project ID</strong> will be displayed at the top of the project interface in the configuration options.</li>
+</ul>
+<p><em>Note:</em> If you already have a <strong>Project ID</strong>, simply access the console and get your project ID.</p>
+<p><strong>Additional Reference:</strong></p>
+<ul>
+<li>For more details on working with Google Earth Engine, you can check the official documentation here: <a href="https://developers.google.com/earth-engine">Google Earth Engine Docs</a>.</li>
+</ul>
+<h2 id="step-3-set-the-project-id-in-geotimelapse">Step 3: Set the Project ID in GeoTimeLapse</h2>
+<ol>
+<li>In the plugin window, you'll find a field called <strong>Project ID</strong>.</li>
+<li>Enter your <strong>Project ID</strong> from Google Earth Engine (the unique ID you obtained in the Google Cloud console).</li>
+<li>Example: <code>satellite-images</code></li>
+<li>After entering the <strong>Project ID</strong>, click the <strong>Verify</strong> button.</li>
+<li>The system will check if the <strong>Project ID</strong> is valid and if the authentication with Google Earth Engine was successful.</li>
+<li>After the verification, you can continue with the setup process.</li>
+</ol>
+<p><img alt="Project verification" src="../img/quick_guide/en/3.png" /></p>
+<h2 id="step-4-select-the-configuration">Step 4: Select the Configuration</h2>
+<ol>
+<li>Once the <strong>Project ID</strong> and authentication are verified, you will be prompted to select the plugin configuration.</li>
+<li>Currently, only the <strong>Basic</strong> option is available.</li>
+<li>Select the <strong>Basic</strong> option.</li>
+</ol>
+<p><img alt="Set configuration" src="../img/quick_guide/en/4.png" /></p>
+<h2 id="step-5-select-the-satellite-image-type">Step 5: Select the Satellite Image Type</h2>
+<ol>
+<li>
+<p>Three image filters will be presented to you, depending on the type of visualization you need:</p>
+<ul>
+<li>
+<p><strong>Natural Color</strong>: Ideal for general visualization.</p>
+</li>
+<li>
+<p><strong>Infrared</strong>: Useful for detecting changes in vegetation, soil, and land cover.</p>
+</li>
+<li>
+<p><strong>Radar</strong>: Perfect for identifying areas with high cloud coverage.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>On the right panel, you will be explained when to use each filter.</p>
+</li>
+</ol>
+<p><img alt="Image type section" src="../img/quick_guide/en/5_1.png" /></p>
+<p><img alt="Selected image type" src="../img/quick_guide/en/5_2.png" /></p>
+<h4 id="additional-configurations">Additional Configurations</h4>
+<p>If you want to modify some aspects of the image, you can access the <strong>Additional Configurations</strong>. These options allow you to further customize the visualization:</p>
+<ul>
+<li><strong>Image Normalization</strong>: Leave this option selected if you want the image to highlight land cover more. This helps improve the visualization of terrain changes.</li>
+<li><strong>Select Satellite</strong>: Choose the satellite from which the image will be taken.</li>
+<li>
+<p><strong>Image Composition</strong>:</p>
+<ul>
+<li>
+<p><strong>Median</strong>: Uses the median of available images to create the composition.</p>
+</li>
+<li>
+<p><strong>Mosaic</strong>: Combines multiple images to create a composite image.</p>
+</li>
+<li>
+<p><strong>Single</strong>: Uses the first image that meets the cloud percentage criteria of the selected satellite.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Cloud Percentage</strong>: This percentage refers to the cloud coverage in the entire satellite image, not just in the selected area. In some cases, the entire image might meet the cloud percentage, but the selected area could have more clouds than expected.</p>
+</li>
+</ul>
+<p><img alt="Additional settings" src="../img/quick_guide/en/5_3.png" /></p>
+<h2 id="step-6-select-the-area-to-visualize">Step 6: Select the Area to Visualize</h2>
+<ol>
+<li>
+<p>Click the <strong>Select an area on the map</strong> button.</p>
+</li>
+<li>
+<p>This will allow you to directly select the area on the QGIS map that you want to visualize over time. You can click and drag to define the area of interest.</p>
+</li>
+</ol>
+<p><img alt="Map area selection section" src="../img/quick_guide/en/6.png" /></p>
+<ol>
+<li>
+<p><strong>Use reference tools</strong> (optional):</p>
+<ul>
+<li>If desired, you can use tools like <strong>Map Quick Service</strong> to obtain reference maps and ensure you're selecting the correct region.</li>
+</ul>
+</li>
+</ol>
+<p><img alt="Area select" src="../img/quick_guide/en/6_1.png" /></p>
+<ol>
+<li>
+<p><strong>Enter coordinates manually</strong>:</p>
+<ul>
+<li>
+<p>If you prefer to define the area using coordinates, you can manually enter the coordinates in <strong>WGS84 (EPSG:4326)</strong>.</p>
+</li>
+<li>
+<p>Enter the coordinates of the two points that define the area of interest:</p>
+<ul>
+<li>
+<p><strong>Point 1</strong>: Coordinates of the top-left corner (latitude and longitude).</p>
+</li>
+<li>
+<p><strong>Point 2</strong>: Coordinates of the bottom-right corner (latitude and longitude).</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<p><img alt="Manual coordinates setting" src="../img/quick_guide/en/6_2.png" /></p>
+<h2 id="step-7-select-the-time-period">Step 7: Select the Time Period</h2>
+<ol>
+<li>
+<p>Select the time range for the temporal intervals:</p>
+<ul>
+<li><strong>Start Date</strong>: Choose the date you want the visualization to start from.</li>
+<li><strong>End Date</strong>: Select the date you want the visualization to end.</li>
+</ul>
+</li>
+<li>
+<p><strong>Time Interval</strong>:</p>
+<ul>
+<li>
+<p>You can choose the time interval between each image. The options are:</p>
+<ul>
+<li><strong>3 months</strong></li>
+<li><strong>6 months</strong></li>
+<li><strong>1 year</strong> (recommended)</li>
+<li><strong>2 years</strong></li>
+</ul>
+</li>
+<li>
+<p>The system will generate images at a fixed time interval, depending on what you select. For example:</p>
+</li>
+<li>
+<p>If you select <strong>1 year</strong>, the system will generate at least one image per year within the chosen date range. The images will be generated for each date that fits that interval (one image in 2017, another in 2018, and so on).</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Frame Duration</strong>:</p>
+<ul>
+<li>Here you can set how long each displayed satellite image will last. The default value is <strong>1 second</strong>, but you can adjust it to your preference.</li>
+</ul>
+</li>
+<li>
+<p>In the summary, details such as the image type, selected satellite, and maximum cloud percentage will be displayed.</p>
+</li>
+</ol>
+<p><img alt="Time period" src="../img/quick_guide/en/7.png" /></p>
+<h2 id="step-8-select-the-template-for-the-animation">Step 8: Select the Template for the Animation</h2>
+<ol>
+<li>The chosen template will determine how the images are presented in the video.</li>
+</ol>
+<p><img alt="Choose template" src="../img/quick_guide/en/8.png" /></p>
+<h2 id="step-9-select-the-output-directory">Step 9: Select the Output Directory</h2>
+<ol>
+<li>Click the directory icon to select the destination folder.</li>
+</ol>
+<p><img alt="Select directory" src="../img/quick_guide/es/9.png" /></p>
+<h2 id="step-10-create-the-video">Step 10: Create the Video</h2>
+<ol>
+<li>Once everything is configured, the system will begin processing the information and generating the video.</li>
+<li>You will see a progress indicator showing the percentage of completion.</li>
+</ol>
+<p><img alt="Animation creation upload" src="../img/quick_guide/en/10.gif" /></p>
+<ol>
+<li>When the process is finished, you can click <strong>Finish</strong>.</li>
+</ol>
+<p><img alt="Exported animation" src="../img/quick_guide/en/11.png" /></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 Cristian Blanco, Ana Herrera
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
